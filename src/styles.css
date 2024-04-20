@@ -5,20 +5,20 @@ body { margin: 0; }
 /* preloading images to avois flickering */
 body:after {
     content: 
-    url('../src/assets/outro/1.jpg') 
-    url('../src/assets/outro/2.jpg') 
-    url('../src/assets/outro/3.jpg') 
-    url('../src/assets/outro/4.png') 
-    url('../src/assets/outro/5.png') 
-    url('../src/assets/outro/6.png') 
-    url('../src/assets/outro/7.jpg') 
-    url('../src/assets/outro/8.png') 
-    url('../src/assets/outro/9.png') 
-    url('../src/assets/outro/10.jpeg')
-    url('../src/assets/outro/11.png')
-    url('../src/assets/blank.png')
-    url('../src/assets/yes.jpg')
-    url("../src/assets/outro.mp3");
+    url('assets/outro/1.jpg') 
+    url('assets/outro/2.jpg') 
+    url('assets/outro/3.jpg') 
+    url('assets/outro/4.png') 
+    url('assets/outro/5.png') 
+    url('assets/outro/6.png') 
+    url('assets/outro/7.jpg') 
+    url('assets/outro/8.png') 
+    url('assets/outro/9.png') 
+    url('assets/outro/10.jpeg')
+    url('assets/outro/11.png')
+    url('assets/blank.png')
+    url('assets/yes.jpg')
+    url("assets/outro.mp3");
     position: absolute;
     
     width:0; 
