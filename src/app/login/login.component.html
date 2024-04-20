@@ -1,0 +1,21 @@
+
+<div class="bg">
+
+    <form class="mainblock" [formGroup]="loginForm" (submit)="submitLogPass()">
+
+    <h1>LOGIN</h1>
+
+    <input type="text" formControlName="login" placeholder="kazuma" required/>
+    <input type="password" formControlName="password" placeholder="konosuba" required />
+
+    <a [routerLink]="['/gallery']"><input class="login" type="submit" value="Begin!"/></a>
+    
+    </form>
+
+</div>
+
+
+
+
+
+

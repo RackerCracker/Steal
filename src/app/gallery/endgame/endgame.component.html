@@ -1,0 +1,77 @@
+@if(!(kazumaStats.health > 0)){
+
+    <div class="box">
+        
+             <!-- дневник -->
+             <div class="diary-center">
+                <div (click)="openDiary()" class="diary-box">
+                    <div class="diary">
+                        @if (kazumaService.newMessage){
+                            <div class="exclamation"><p style="margin-top: 34px; margin-right: 8px">!</p></div>
+                        }
+                    </div>
+                </div>
+            </div>    
+            
+ 
+            <!-- рисунок -->
+            <div class="theend-box-box">
+                <div class="theend-box">
+                    <img class="theendpic" src="../../../assets/theend.jpg" alt="">
+                </div>
+            </div>
+
+    
+            <!-- текст -->
+            <h2>You died</h2>
+        
+            <p class="par">Congratulations! This miserable life is over. Time to get new adventures!</p>
+            
+            <p class="right">-Secret Adventurer</p>  
+        
+    </div>
+    
+}
+@else{
+    @if(kazumaStats.panties === 8){
+
+        <div class="box">
+
+            <!-- дневник -->
+             <div class="diary-center">
+                <div (click)="openDiary()" class="diary-box">
+                    <div class="diary">
+                        @if (kazumaService.newMessage){
+                            <div class="exclamation"><p style="margin-top: 34px; margin-right: 8px">!</p></div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            
+             <!-- рисунок -->
+             <div class="theend-box-box">
+                <div class="theend-box">
+                    <img class="theendpic" src="../../../assets/good.jpeg">
+                </div>
+            </div>
+            
+        
+            <h2>Congratulations!</h2>
+        
+            <p class="par">All the panties are yours. Enjoy your time together!</p>
+        
+            <!-- <p class="par">...</p>
+        
+            <p class="par">Sayonara! See you next time!</p> -->
+        
+            <p class="right">-Secret Adventurer</p>
+        
+            <div class="button-box">
+                <a [routerLink]="['/outro']"><button class="button" (click)="close()">The End</button></a>
+            </div>
+        
+        </div>
+
+    }   
+}

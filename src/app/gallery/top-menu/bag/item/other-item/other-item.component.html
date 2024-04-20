@@ -1,0 +1,108 @@
+
+<section class="bg">
+
+<section class="box">
+
+        <button class="exitsmall" (click)="close()">X</button>
+    
+        <!-- @switch(true) {
+            @case(item.name.includes("Megumin")){ <img class="pic" style="border: 2px solid rgb(194, 65, 68);" [src]="item.img"> }
+            @case(item.name.includes("Darkness")){ <img class="pic" style="border: 2px solid rgb(202, 143, 43); " [src]="item.img"> }
+            @case(item.name.includes("Aqua")){ <img class="pic" style="border: 2px solid rgb(39, 65, 126);" [src]="item.img"> }
+            @case(item.name.includes("Wiz")){ <img class="pic" style="border: 2px solid rgb(73, 53, 90);" [src]="item.img"> }
+            @case(item.name.includes("Kris")){ <img class="pic" style="border: 2px solid rgb(106, 147, 103);" [src]="item.img"> }
+            @case(item.name.includes("Eris")){ <img class="pic" style="border: 2px solid rgb(93, 92, 145);" [src]="item.img"> }
+            @case(item.name.includes("Sylvia")){ <img class="pic" style="border: 2px solid rgb(165, 46, 75);" [src]="item.img"> }
+            @case(item.name.includes("Yun-Yun")){ <img class="pic" style="border: 2px solid rgb(49, 47, 59);" [src]="item.img"> }
+            @default{<img class="pic" style="border: 2px solid rgb(91, 91, 91);" [src]="item.img"> }
+        } -->
+    
+        <img class="pic" style="border: 2px solid rgb(91, 91, 91);" [src]="item.img">
+
+        
+            <!-- @switch(true) {
+                @case(item.name.includes("Megumin")){ 
+                    <div class="headerbg" style="background-color: rgba(194, 65, 68, 0.5);"> 
+                        <p class="header" style="color: rgb(194, 65, 68);">{{item.name}}</p>
+                        <p class="subheader">{{item.description}}</p> 
+                    </div>  
+                }
+                @case(item.name.includes("Darkness")){ 
+                    <div class="headerbg" style="background-color: rgba(202, 143, 43, 0.5);"> 
+                        <p class="header" style="color: rgb(202, 143, 43); ">{{item.name}}</p>
+                        <p class="subheader">{{item.description}}</p> 
+                    </div>
+                }
+                @case(item.name.includes("Aqua")){ 
+                    <div class="headerbg" style="background-color: rgba(39, 65, 126, 0.5)"> 
+                        <p class="header" style="color: rgb(39, 65, 126);" >{{item.name}}</p> 
+                        <p class="subheader">{{item.description}}</p>
+                    </div>
+                }
+                @case(item.name.includes("Wiz")){ 
+                    <div class="headerbg" style="background-color: rgba(73, 53, 90, 0.5);"> 
+                        <p class="header" style="color: rgb(73, 53, 90);">{{item.name}}</p>
+                        <p class="subheader">{{item.description}}</p> 
+                    </div>
+                }
+                @case(item.name.includes("Kris")){ 
+                    <div class="headerbg" style="background-color: rgba(106, 147, 103, 0.5);"> 
+                        <p class="header" style="color: rgb(106, 147, 103);" >{{item.name}}</p> 
+                        <p class="subheader">{{item.description}}</p> 
+                    </div>
+                }
+                @case(item.name.includes("Eris")){ 
+                    <div class="headerbg" style="background-color: rgba(93, 92, 145, 0.5)"> 
+                        <p class="header" style="color: rgb(93, 92, 145);" >{{item.name}}</p> 
+                        <p class="subheader">{{item.description}}</p> 
+                    </div>
+                }
+                @case(item.name.includes("Sylvia")){ 
+                    <div class="headerbg" style="background-color: rgba(165, 46, 75, 0.5)"> 
+                        <p class="header" style="color: rgb(165, 46, 75);" >{{item.name}}</p> 
+                        <p class="subheader">{{item.description}}</p> 
+                    </div>
+                }
+                @case(item.name.includes("Yun-Yun")){ 
+                    <div class="headerbg" style="background-color: rgba(49, 47, 59, 0.5);"> 
+                        <p class="header" style="color: rgb(49, 47, 59);">{{item.name}}</p> 
+                        <p class="subheader">{{item.description}}</p>
+                    </div>
+                }
+                @default{                     
+                    <div class="headerbg"> 
+                        <p class="header" style="background-color: rgba(91, 91, 91, 0.5);">{{item.name}}</p>
+                        <p class="subheader" style="color: rgb(91, 91, 91);">{{item.description}}</p> 
+                    </div>
+                }
+            } -->
+            
+
+    
+        <div class="headerbg">
+            @switch(true) {
+                @case(item.name.includes("Megumin")){ <p class="header" style="color: rgb(194, 65, 68);">{{item.name}}</p> }
+                @case(item.name.includes("Darkness")){ <p class="header" style="color: rgb(202, 143, 43); " >{{item.name}}</p> }
+                @case(item.name.includes("Aqua")){ <p class="header" style="color: rgb(39, 65, 126);" >{{item.name}}</p> }
+                @case(item.name.includes("Wiz")){ <p class="header" style="color: rgb(73, 53, 90);" >{{item.name}}</p> }
+                @case(item.name.includes("Kris")){ <p class="header" style="color: rgb(106, 147, 103);" >{{item.name}}</p> }
+                @case(item.name.includes("Eris")){ <p class="header" style="color: rgb(93, 92, 145);" >{{item.name}}</p> }
+                @case(item.name.includes("Sylvia")){ <p class="header" style="color: rgb(165, 46, 75);" >{{item.name}}</p> }
+                @case(item.name.includes("Yun-Yun")){ <p class="header" style="color: rgb(49, 47, 59);">{{item.name}}</p> }
+                @default{ <p class="header" style="color: rgb(91, 91, 91);">{{item.name}}</p> }
+            }
+            <p class="subheader">{{item.description}}</p>
+        </div>
+    
+        <div class="button-box">
+            @for (effect of item.effects; track effect){
+                <button (click)="UseEffect(effect, item)" class="button">{{effect.name}}</button>
+            }
+        </div>
+
+
+        
+    </section>
+
+
+</section>

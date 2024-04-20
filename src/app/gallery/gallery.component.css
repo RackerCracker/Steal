@@ -1,0 +1,32 @@
+.bg{
+
+    background-image: url(../../assets/background2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: minmax(100vh, max-content);
+
+    padding-top: 4vh;
+}
+
+.container {
+
+    display: grid;
+    justify-content: space-between;
+
+    /* padding: 4vh;
+
+    column-gap: 4vh;
+    row-gap: 4vh; */
+
+    padding: 4vh 1.83vw;
+
+    column-gap: 1.83vw;
+    row-gap: 4vh;
+
+    grid-template-columns: repeat(auto-fill, 22vw);
+
+}
+
+  

@@ -1,0 +1,156 @@
+.bg{
+    width: 850px;
+    height: 550px;
+    
+    background-image: url(../../../../../../assets/items/diary_opened.png);
+    background-color: #00000022; 
+    background-size: 900px 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    padding: 25px 25px; 
+
+    overflow: hidden;
+}
+
+.pages{
+
+    width: 2550px;
+    height: 550px;
+
+	column-count: 6;
+    column-width: auto;
+    /* column-width: 150px; */
+    /* column-rule: 2px solid red; */
+    column-fill: auto;
+
+    overflow: hidden;
+
+}
+
+/* .title{
+    font: 15px/1.2 Grobold;
+    text-align: left;
+    line-height: 100%;
+
+    margin: 0 25px 0 25px;
+} */
+
+.text{
+    font: 15px/1.2 Grobold;
+    text-align: left;
+    line-height: 150%;
+
+    margin: 10px 25px 10px 25px;
+}
+
+.go-left{
+
+    font: 20px/1.2 Grobold;
+
+    width: 30px;
+    height: 50px;
+    
+    border: 1px solid rgb(91, 91, 91);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f4f4ad;
+    border-radius: 6px;
+
+    z-index: 1;
+
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translate(0, -50%);
+
+}
+
+.go-right{
+
+    font: 20px/1.2 Grobold;
+
+    width: 30px;
+    height: 50px;
+    
+    border: 1px solid rgb(91, 91, 91);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f4f4ad;
+    border-radius: 6px;
+
+    z-index: 1;
+
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translate(0, -50%);
+
+}
+
+.go-left:hover {
+    box-shadow: inset 0 0 0 3em #ffd900;
+    cursor: pointer;
+} 
+
+.go-right:hover {
+    box-shadow: inset 0 0 0 3em #ffd900;
+    cursor: pointer;
+} 
+
+.arrow-left {
+    width: 13px;
+    height: 13px;
+  
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+
+    transform: translate(20%, 10%) rotate(45deg);
+}
+
+.arrow-right {
+    width: 13px;
+    height: 13px;
+  
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+
+    transform: translate(-20%, 10%) rotate(-45deg);
+}
+
+.exitsmall{
+
+    font: 20px/1.2 Grobold;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgb(91, 91, 91);
+
+    background-color: #f4f4f4ad;
+    border-radius: 6px;
+
+    z-index: 1;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.exitsmall:hover {
+    box-shadow: inset 0 0 0 3em #ffd900;
+    cursor: pointer;
+} 
+
+@font-face {
+    font-family: Grobold;
+    src: url(../../../../../../assets/GROBOLD.ttf) format('truetype');
+}

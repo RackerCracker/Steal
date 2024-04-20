@@ -1,0 +1,620 @@
+{
+    "locations": [
+        {   
+            "id": 0,
+            "name": "Grassland",
+            "img": "/assets/locations/loc1.jpg",
+            "notes": [
+
+            ],
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Healing potion",
+                    "img": "/assets/items/health.png",
+                    "description": "Best treatment after a slap",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [
+                        {
+                            "name": "Wiz",
+                            "note": "I tried to distract Wiz with healing potion. No wonder it didn't work. She sees them every day.",
+                            "img":"/assets/wiz/before.jpg",
+                            "distraction": false
+                        }
+            
+                    ],
+                    "effects": [
+                        {
+                            "name": "Drink",
+                            "health": 1,
+                            "mana": 0,
+                            "note": ""
+                        }
+                    ],
+                    "note": "",
+                    "position": "position: absolute; left: 20px; bottom: 290px;"
+                },
+                {
+                    "id": 13,
+                    "name": "Cabbage",
+                    "img": "/assets/items/cabbage.jpg",
+                    "description": "Live fast. Die young.",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [
+                        {
+                            "name": "Darkness",
+                            "note": "A cabbage flew right into Darkness! Did she just like it?",
+                            "img": "/assets/darkness/distracted1.jpg",
+                            "distraction": true
+                        },
+                        {
+                            "name": "Aqua",
+                            "note": "Seems like Aqua made some new friends. Makes sense, they are 90% water.",
+                            "img": "/assets/aqua/distracted2.jpg",
+                            "distraction": true
+                        }       
+                    ],
+                    "effects": [
+                        {
+                            "name": "Eat",
+                            "health": 1,
+                            "mana": 0,
+                            "note": "Couldn't I find a better use for a flying cabbage? It tastes good, at least."
+                        }
+                    ],
+                    "note": "A flying cabbage. I wonder what Darkness would think about it.",
+                    "position": "position: absolute; right: 170px; bottom: 240px;"
+                },
+                {
+                    "id": 14,
+                    "name": "Golden apples",
+                    "img": "/assets/items/apples.png",
+                    "description": "Almost as precious as myself",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [
+                        {
+                            "name": "Kris",
+                            "note": "What better way is to distract a thief than with gold? Good boy, Kazuma. Good boy.",
+                            "img": "/assets/kris/distracted1.png",
+                            "distraction": true
+                        },
+                        {
+                            "name": "Sylvia",
+                            "note": "I tried to bribe Sylvia with golden apples. Could it work? Not in this universe.",
+                            "img": "/assets/sylvia/before.jpg",
+                            "distraction": false
+                        }       
+                    ],
+                    "effects": [
+                        {
+                            "name": "Eat",
+                            "health": -1,
+                            "mana": 0,
+                            "note": "Oh boy. They are golden. I just broke my tooth."
+                        }
+                    ],
+                    "note": "Apples! Made of gold! Am I able to sell it and just buy what I want?",
+                    "position": "position: absolute; left: 240px; top: 60px;"
+                }
+            ]
+        },
+        {   
+            "id": 1, 
+            "name": "Riverside",
+            "img": "/assets/locations/loc2.png",
+            "notes": [
+
+            ],
+            "items": [
+
+            ]
+        },
+        {   
+            "id": 2,
+            "name": "Bridge",
+            "img": "/assets/locations/loc3.jpg",
+            "notes": [
+
+            ],
+            "items": [
+                {
+                    "id": 11,
+                    "name": "Wine",
+                    "img": "/assets/items/wine.jpg",
+                    "description": "Aqua's favorite",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [
+                        {
+                            "name": "Aqua",
+                            "note": "Now Aqua's asleep, and no one can stop me!",
+                            "img":"/assets/aqua/distracted1.jpeg",
+                            "distraction": true
+                        },
+                        {
+                            "name": "Sylvia",
+                            "note": "A whole bottle in a single gulp. Not your best guess, Kazuma.",
+                            "img": "/assets/sylvia/before.jpg",
+                            "distraction": false
+                        }
+                    ],
+                    "effects": [
+                        {
+                            "name": "Drink",
+                            "health": -1,
+                            "mana": 1,
+                            "note": "They say, they do mana potions out of it. It works! I guess, that's why Aqua is always drunk."
+                        }
+                    ],
+                    "note": "Somebody threw out a bottle of excellent wine! Or they just put it there to chill. Doesn't really matter.",
+                    "position": "position: absolute; left: 245px; bottom: 80px;"
+                },
+                {
+                    "id": 2,
+                    "name": "Mana potion",
+                    "img": "/assets/items/mana.png",
+                    "description": "Easy way to cast spells",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [
+                        {
+                            "name": "Megumin",
+                            "note": "I gave Megumin a mana potion. Guess what? She made another EXPLOSION!",
+                            "img":"/assets/megumin/distracted2.jpeg",
+                            "distraction": true
+                        },
+                        {
+                            "name": "Wiz",
+                            "note": "I gave a mana potion to Wiz. She thanked me. Wow.",
+                            "img":"/assets/wiz/before.jpg",
+                            "distraction": false
+                        }
+                    ],
+                    "effects": [
+                        {
+                            "name": "Drink",
+                            "health": 0,
+                            "mana": 1,
+                            "note": ""
+                        }
+                    ],
+                    "note": "",
+                    "position": "position: absolute; right: 45px; bottom: 255px;"
+                }
+            ]
+        },
+        {   
+            "id": 3,
+            "name": "Street",
+            "img": "/assets/locations/loc4.jpg",
+            "notes": [
+                
+            ],
+            "items": [
+                {
+                    "id": 0,
+                    "name": "Rare potion",
+                    "img": "/assets/items/rare.png",
+                    "description": "Who knows what it does?",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [
+                        {
+                            "name": "Wiz",
+                            "note": "Looks like Wiz took a keen interest in this potion. Good thing I saved it!",
+                            "img":"/assets/wiz/distracted.png",
+                            "distraction": true
+                        }
+                    ],
+                    "effects": [
+                        {
+                            "name": "Drink",
+                            "health": -10,
+                            "mana": 0,
+                            "note": "It was a potion for permanent impotence. Oh boy."
+                        }
+                    ],
+                    "note": "I found a rare potion. What do I do with it?",
+                    "position": "position: absolute; right: 80px; bottom: 5px;"
+                },
+                {
+                    "id": 12,
+                    "name": "Chomusuke",
+                    "img": "/assets/items/chomusuke.png",
+                    "description": "Kawaii little demon. Nya!",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [{
+                        "name": "Megumin",
+                        "note": "Megumin doesn't seem to be really glad. At least, her hands are busy.",
+                        "img": "/assets/megumin/distracted1.jpg",
+                        "distraction": true
+                    },
+                    {
+                        "name": "Yun-Yun",
+                        "note": "Yun-Yun adores the little kitty. Time to act!",
+                        "img": "/assets/yunyun/distracted1.jpg",
+                        "distraction": true
+                    }
+                    ],
+                    "effects": [
+                        {
+                            "name": "Pet",
+                            "health": 0,
+                            "mana": 0,
+                            "note": "I've pet a kitty. What a nice day it is!"
+                        }
+                    ],
+                    "note": "Look who I found. Chomusuke! It's time to bring him back.",
+                    "position": "position: absolute; right: 140px; top:25px;"
+                }
+            ]
+        }
+    ],
+
+    "items": [
+    {
+        "id": 0,
+        "name": "Rare potion",
+        "img": "/assets/items/rare.png",
+        "description": "Who knows what it does?",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [
+            {
+                "name": "Wiz",
+                "note": "Looks like Wiz took a keen interest in this potion. Good thing I saved it for her!",
+                "img":"/assets/wiz/distracted.jpg",
+                "distraction": true
+            }
+        ],
+        "effects": [
+            {
+                "name": "Drink",
+                "health": -10,
+                "mana": 0,
+                "note": "It was a potion for permanent impotence. Oh boy."
+            }
+        ],
+        "note": "I found a rare potion. What do I do with it?",
+        "position": "position: absolute; right: 10px; bottom: 350px;"
+    },
+    {
+        "id": 1,
+        "name": "Healing potion",
+        "img": "/assets/items/health.png",
+        "description": "Best treatment after a slap",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [
+            {
+                "name": "Wiz",
+                "note": "I tried to distract Wiz with healing potion. No wonder it didn't work. She sees them every day.",
+                "img":"/assets/wiz/before.jpg",
+                "distraction": false
+            }
+
+        ],
+        "effects": [
+            {
+                "name": "Drink",
+                "health": 1,
+                "mana": 0,
+                "note": ""
+            }
+        ],
+        "note": "",
+        "position": "position: absolute; left: 20px; bottom: 290px;"
+    },
+    {
+        "id": 2,
+        "name": "Mana potion",
+        "img": "/assets/items/mana.png",
+        "description": "Easy way to cast spells",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [
+            {
+                "name": "Megumin",
+                "note": "I gave Megumin a mana potion. Guess what? She made another EXPLOSION! ...now she is tired...",
+                "img":"/assets/megumin/distracted2.jpeg",
+                "distraction": true
+            },
+            {
+                "name": "Wiz",
+                "note": "I gave a mana potion to Wiz. She thanked me. Wow.",
+                "img":"/assets/wiz/before.jpg",
+                "distraction": false
+            }
+        ],
+        "effects": [
+            {
+                "name": "Drink",
+                "health": 0,
+                "mana": 1,
+                "note": ""
+            }
+        ],
+        "note": "",
+        "position": "position: absolute; right: 10px; bottom: 350px;"
+    },
+    {   
+        "id": 3,
+        "name": "Megumin's panties",
+        "img": "/assets/items/panties.jpg",
+        "description": "A place where you can feel at home",
+        "color": "border: 2px dashed rgb(194, 65, 68);",
+        "usable": [],
+        "effects": [
+            {
+                "name": "Smell",
+                "health": 1,
+                "mana": 0,
+                "note": "Soft, but delicate. Feels you with warmth and comfort."
+                
+            },
+            {
+                "name": "Put on",
+                "health": 0,
+                "mana": 0,
+                "note": "I feel a burst of energy! Now I need no mana to cast. Girls won't be so glad, though."
+            }
+        ],
+        "note": "",
+        "position": ""
+    },
+    {
+        "id": 4,
+        "name": "Aqua's panties",
+        "img": "/assets/items/panties.jpg",
+        "description": "As blue as water itself",
+        "color": "border: 2px dashed rgb(39, 65, 126);",
+        "usable": [],
+        "effects": [
+            {
+                "name": "Smell",
+                "health": 0,
+                "mana": 1,
+                "note": "Aah. A breath of an ocean. So invigorating."
+            }
+        ],
+        "note": "",
+        "position": ""
+    },
+    {
+        "id": 5,
+        "name": "Darkness's panties",
+        "img": "/assets/items/panties.jpg",
+        "description": "Chain mail everywhere. Sure.",
+        "color": "border: 2px dashed rgb(202, 143, 43);",
+        "usable": [],
+        "effects": [
+            {
+                "name": "Smell",
+                "health": 0,
+                "mana": 0,
+                "note": "Do you know what an armory lube tastes like? I do."
+            },
+            {
+                "name": "Put on",
+                "health": 1,
+                "mana": 0,
+                "note": "A man gotta protect himself. Doesn't sit as tight as on Darkness, though."
+            }
+        ],
+        "note": "",
+        "position": ""
+    },
+    {
+        "id": 6,
+        "name": "Yun-Yun's panties",
+        "img": "/assets/items/panties.jpg",
+        "description": "Decorated with a red ribbon",
+        "color": "border: 2px dashed rgb(49, 47, 59);",
+        "usable": [],
+        "effects": [
+            {
+                "name": "Smell",
+                "health": 0,
+                "mana": 1,
+                "note": "A strong base with some sweet notes. Exhilarating!"
+            }
+        ],
+        "note": "",
+        "position": ""
+    },
+    {
+        "id": 7,
+        "name": "Sylvia's panties",
+        "img": "/assets/items/panties.jpg",
+        "description": "Red. Dark. Huge.",
+        "color": "border: 2px dashed rgb(165, 46, 75);",
+        "usable": [],
+        "effects": [
+            {
+                "name": "Smell",
+                "health": -3,
+                "mana": 0,
+                "note": "This is not a female bouquet! Why on earth would I do that?"
+            }
+        ],
+        "note": "",
+        "position": ""
+    },
+    {
+        "id": 8,
+        "name": "Wiz's panties",
+        "img": "/assets/items/panties.jpg",
+        "usable": [],
+        "description": "Stolen from a dead body",
+        "color": "border: 2px dashed rgb(73, 53, 90);",
+        "effects": [
+            {
+                "name": "Smell",
+                "health": 0,
+                "mana": 1,
+                "note":  "A delicate fragrance of an alchemic shop. 4/5."
+            }
+        ],
+        "note": "",
+        "position": ""
+
+    },
+    {
+        "id": 9,
+        "name": "Eris's panties",
+        "img": "/assets/items/panties.jpg",
+        "description": "From the hands of the god herself. Almost.",
+        "color": "border: 2px dashed rgb(93, 92, 145);",
+        "usable": [],
+        "effects": [
+            {
+                "name": "Smell",
+                "health": 0,
+                "mana": 1,
+                "note": "Each breath takes me closer to a god."
+            }
+        ],
+        "note": "",
+        "position": ""
+    },
+    {
+        "id": 10,
+        "name": "Kris's panties",
+        "img": "/assets/items/panties.jpg",
+        "description": "Stolen from a thief",
+        "color": "border: 2px dashed rgb(106, 147, 103);",
+        "usable": [],
+        "effects": [
+            {
+                "name": "Smell",
+                "health": 1,
+                "mana": 0,
+                "note": "A *taste* of victory, HA-HA-HA."
+            }
+        ],
+        "note": "",
+        "position": ""
+    },
+    {
+        "id": 11,
+        "name": "Wine",
+        "img": "/assets/items/wine.jpg",
+        "description": "Aqua's favorite",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [
+            {
+                "name": "Aqua",
+                "note": "Now Aqua's asleep, and no one can stop me!",
+                "img":"/assets/aqua/distracted1.jpeg",
+                "distraction": true
+            },
+            {
+                "name": "Sylvia",
+                "note": "A whole bottle in a single gulp. Not your best guess, Kazuma.",
+                "img": "/assets/sylvia/before.jpg",
+                "distraction": false
+            }
+        ],
+        "effects": [
+            {
+                "name": "Drink",
+                "health": -1,
+                "mana": 1,
+                "note": "They say, they do mana potions out of it. It works! I guess, that's why Aqua always drunk."
+            }
+        ],
+        "note": "Somebody threw out a bottle of excellent wine! Or they just put it there to chill. Doesn't really matter.",
+        "position": "position: absolute; right: 100px; bottom: 100px;"
+        
+    },
+    {
+        "id": 12,
+        "name": "Chomusuke",
+        "img": "/assets/items/chomusuke.png",
+        "description": "Kawaii little demon. Nya!",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [{
+            "name": "Megumin",
+            "note": "Megumin doesn't seem to be really glad. At least, her hands are busy.",
+            "img": "/assets/megumin/distracted1.jpg",
+            "distraction": true
+        },
+        {
+            "name": "Yun-Yun",
+            "note": "Yun-Yun adores the little kitty. Time to act!",
+            "img": "/assets/yunyun/distracted1.jpg",
+            "distraction": true
+        }
+        ],
+        "effects": [
+            {
+                "name": "Pet",
+                "health": 0,
+                "mana": 0,
+                "note": "I've pet a kitty. What a nice day it is!"
+            }
+        ],
+        "note": "I found Chomusuke! Megumin would be glad to have him back.",
+        "position": "position: absolute; right: 80px; bottom: 5px;"
+    },
+    {
+        "id": 13,
+        "name": "Cabbage",
+        "img": "/assets/items/cabbage.jpg",
+        "description": "Live fast. Die young.",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [
+            {
+                "name": "Darkness",
+                "note": "A cabbage flew right into Darkness! Did she just like it?",
+                "img": "/assets/darkness/distracted1.png",
+                "distraction": true
+            },
+            {
+                "name": "Aqua",
+                "note": "Seems like Aqua made some new friends. Makes sense, they are 90% water.",
+                "img":"/assets/aqua/distracted2.jpg",
+                "distraction": true
+            }       
+        ],
+        "effects": [
+            {
+                "name": "Eat",
+                "health": 1,
+                "mana": 0,
+                "note": "Couldn't I find a better use for a flying cabbage? It tastes good, at least."
+            }
+        ],
+        "note": "A flying cabbage. I wonder what Darkness would think about it.",
+        "position": "position: absolute; right: 170px; bottom: 240px;"
+    },
+    {
+        "id": 14,
+        "name": "Golden apples",
+        "img": "/assets/items/apples.png",
+        "description": "Almost as precious as myself",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [
+            {
+                "name": "Kris",
+                "note": "What better way is to distract a thief than with gold? Good boy, Kazuma. Good boy.",
+                "img": "/assets/kris/distracted1.png",
+                "distraction": true
+            },
+            {
+                "name": "Sylvia",
+                "note": "I tried to bribe Sylvia with golden apples. Could it work? Not in this universe.",
+                "img": "/assets/sylvia/before.jpg",
+                "distraction": false
+            }       
+        ],
+        "effects": [
+            {
+                "name": "Eat",
+                "health": -1,
+                "mana": 0,
+                "note": "Oh boy. They are golden. I just broke my tooth."
+            }
+        ],
+        "note": "Apples! Made of gold! Am I able to sell it and just buy what I want?",
+        "position": "position: absolute; left: 230px; top: 70px;"
+    }
+    ]
+
+
+
+}

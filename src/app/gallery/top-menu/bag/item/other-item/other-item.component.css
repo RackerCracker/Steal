@@ -1,0 +1,144 @@
+.bg{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(/assets/background2.jpg);
+    background-size: 500px 730px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    
+    background-color: #f4f4f450;
+
+    /* background-image: url(/assets/paper.jpg);
+    background-size: 380px 660px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; */
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* overflow: hidden; */
+}
+
+.pic{
+    width: 260px;
+    height: 260px;
+    border-radius: 300px;
+  
+    border: 2px solid rgb(91, 91, 91);
+  
+    object-fit: cover;
+
+    margin: 25px 0;
+  }
+
+.headerbg{
+
+    background-color: #f4f4f4AD;
+    border: 1px solid rgb(91, 91, 91);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.header{
+    font: 32px/1 Grobold;
+    -webkit-text-stroke: 1px rgb(225,225,225);
+
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+.subheader{
+    font: 14px/1 Grobold;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+}
+
+.button-box{
+
+    /* position: absolute;
+    bottom: 40px; */
+
+    /* background-color: pink; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    column-gap: 2vh;
+
+    grid-template-columns: repeat(auto-fill, 12vh);
+
+    height: 10%;
+    width: 100%;
+
+    margin: 20px 0;
+
+}
+
+.button{
+
+    font: 20px/1.2 Grobold;
+
+    width: 7em;
+    height: 2.2em;
+
+    background-color: #f4f4f4AD;
+    border-radius: 6px;
+
+    border: 1px solid rgb(91, 91, 91);
+
+}
+
+.button:hover {
+    box-shadow: inset 0 0 0 3em #ffd900;
+    cursor: pointer;
+}
+
+.exitsmall{
+
+    font: 20px/1.2 Grobold;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgb(91, 91, 91);
+
+    background-color: #f4f4f4AD;
+    border-radius: 6px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.exitsmall:hover {
+    box-shadow: inset 0 0 0 3em #ffd900;
+    cursor: pointer;
+} 
+
+@font-face {
+    font-family: Grobold;
+    src: url(../../../../../../assets/GROBOLD.ttf) format('truetype');
+}

@@ -1,0 +1,70 @@
+@if (showtest){
+    <div class="test"></div>
+}
+@else{
+    @if (this.girl.img != this.girl.img_after){
+        <div class="magic" (mousedown)="mousedown()" (mouseup)="mouseup()" (mouseleave)="mouseup()"></div>
+    }
+}
+
+<!-- можно кастовать, пока не начнутся превращения - после этого кастовать нельзя -->
+
+
+<img [src]="girl.img" class="bg">
+
+<section>
+
+    <button class="exitsmall" (click)="close()">X</button>
+
+    <!-- Кацума -->
+    <div class="kazuma-box">
+        <img class="kazuma" src="../../../../assets/kazuma/{{kazumaStats.img}}.jpg" alt="">
+    </div>
+    
+    <!-- дневник -->
+    <div (click)="openDiary()" class="diary-box">
+        <div class="diary">
+            @if (kazumaService.newMessage){
+                <div class="exclamation"><p style="margin-top: 34px; margin-right: 8px">!</p></div>
+            }
+        </div>
+    </div>
+
+    <!-- мана и здоровье -->
+    <div class="health-mana-box">
+        @if (kazumaStats.health > 0 ){
+            <div class="health" *ngFor="let item of [].constructor(kazumaStats.health)"></div>
+        }
+        @if (kazumaStats.mana > 0 ){
+            <div class="mana" *ngFor="let item of [].constructor(kazumaStats.mana)"></div>
+        }
+    </div>
+
+
+    <!-- <button (click)="AllInOne(girl.note, itemsList[girl.panties_id])">AllInOne</button> -->
+
+
+
+    <!-- нижнее меню -->
+    @if (girl.img !== girl.img_after){
+        <section class="items-box">
+
+            @for(item of girl.items; track item){
+                <img class="pic" (click)="Give(item)" [src]="item.img" alt="{{item.name}}">
+            }
+            @if(3 > girl.items.length){
+                <div class="empty" *ngFor="let item of [].constructor(3-girl.items.length)"></div>
+            }
+    
+        </section>
+    }
+
+
+
+</section>
+
+
+
+
+
+

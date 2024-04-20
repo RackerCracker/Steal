@@ -1,0 +1,200 @@
+.bg{
+    width: 100%;
+    height: 100%;
+
+    transition: box-shadow 2s;
+}
+
+.exitsmall{
+
+    font: 20px/1.2 Grobold;
+
+    background-color: #f4f4f4ad;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 6px;
+
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+}
+
+.exitsmall:hover {
+    box-shadow: inset 0 0 0 3em #ffd900;
+    cursor: pointer;
+} 
+
+
+.kazuma{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  
+    object-fit: cover;
+  
+    border: 1px solid rgb(91, 91, 91);
+    /* border: 1px solid #f4f4f4ad; */
+
+    box-shadow: 0 0 0 2px #f4f4f4ad;
+    
+}
+
+.exclamation{
+
+    font: 32px/1.2 Grobold;
+    color: rgb(206, 0, 0);
+
+    background-color: #ffffff50;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    text-shadow: 0 0 7px #ffffff;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+.diary{
+
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+
+    background-image: url(../../../../assets/items/diary2.png);
+    background-size: contain;
+    background-position: center center;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  
+    object-fit: cover;
+
+}
+
+.diary-box{
+
+    position: absolute;
+    left: 157px;  
+    top: 15px;
+
+    background-color: #f4f4f4ad;
+
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 50%;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px 1px rgba(0,0,0,0.2);
+
+}
+
+.diary-box:hover{
+    filter: brightness(105%);
+    cursor: pointer;
+}
+
+.health-mana-box{
+    position: absolute;
+    left: 229px;  
+    top: 15px;
+
+    display: flex;
+    justify-content: row;
+    align-items: center;
+
+    width: minmax(32px, max-content);
+    height: 32px;
+} 
+
+.health{
+
+    background-color: rgba(206, 0, 0, 0.7);
+
+    width: 26px;
+    height: 26px;
+
+    border: 2px solid #f4f4f4ad;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px 1px rgba(0,0,0,0.2); 
+
+    box-shadow: inset -8px -8px 5px -5px rgba(110, 0, 0, 0.4), inset -5px -5px 6px 12px rgb(206, 0, 0);
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+.mana{
+
+    background-color: rgba(0, 0, 206, 0.7);
+
+    width: 26px;
+    height: 26px;
+
+    border: 2px solid #f4f4f4ad;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px 1px rgba(0,0,0,0.2);
+
+    box-shadow: inset -8px -8px 5px -5px rgba(0, 0, 110, 0.4), inset -5px -5px 6px 12px rgb(0, 0, 206);
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+.item-bg{
+
+    background-color: #f4f4f4ad;
+    padding: 10px 10px; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 12vh;
+    width: 12vh;
+
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 15px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px 1px rgba(0,0,0,0.2);
+
+    opacity: 0;
+    transition: opacity 1s, box-shadow 0.4s;
+    transform: scale(1.00); 
+
+}
+
+.pic{
+    width: 12vh;
+    height: 12vh;
+    
+    border: 2px dashed rgb(91, 91, 91);
+
+    object-fit: cover;
+}
+
+.item-bg:hover{
+    transition: opacity 2s;
+    opacity: 100;
+
+    cursor: pointer;
+}

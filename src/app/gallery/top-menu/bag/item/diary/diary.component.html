@@ -1,0 +1,49 @@
+<section  class="bg">
+
+    <button class="exitsmall" (click)="close()">X</button>
+
+    <div class="go-left" (click)="turn(-1)"> <div class="arrow-left"></div> </div>
+    <div class="go-right" (click)="turn(1)"> <div class="arrow-right"></div> </div>
+
+    <div class="pages" [style]=scale>
+
+        @for(note of notesWritten; track note){
+            @if(note.includes("->")){
+                @switch(true) {
+                    @case(note.includes("Megumin")){ <p class="text" style="color: rgb(194, 65, 68);">{{note}}</p> }
+                    @case(note.includes("Darkness")){ <p class="text" style="color: rgb(202, 143, 43); " >{{note}}</p> }
+                    @case(note.includes("Aqua")){ <p class="text" style="color: rgb(39, 65, 126);" >{{note}}</p> }
+                    @case(note.includes("Wiz")){ <p class="text" style="color: rgb(73, 53, 90);" >{{note}}</p> }
+                    @case(note.includes("Kris")){ <p class="text" style="color: rgb(106, 147, 103);" >{{note}}</p> }
+                    @case(note.includes("Eris")){ <p class="text" style="color: rgb(93, 92, 145);" >{{note}}</p> }
+                    @case(note.includes("Sylvia")){ <p class="text" style="color: rgb(165, 46, 75);" >{{note}}</p> }
+                    @case(note.includes("Yun-Yun")){ <p class="text" style="color: rgb(49, 47, 59);">{{note}}</p> }
+                    @default{ <p class="text" style="color: rgb(91, 91, 91);">{{note}}</p> }
+                }
+            }
+            @else{
+                @switch(true) {
+                    @case(note.includes("Slap!")){ <p class="text" style="color: rgb(170, 0, 0);">{{note}}</p> }
+                    @case(note.includes("slap!")){ <p class="text" style="color: rgb(170, 0, 0);">{{note}}</p> }
+                    @default{ <p class="text">{{note}}</p> }   
+                }
+            }
+        }
+
+    </div>
+
+    
+
+    
+
+<!-- <ng-container [ngSwitch]="window">
+
+    <section *ngSwitchCase="1" [ngClass]="{'bg': true, 'one': true}" >lol</section>
+    <section *ngSwitchCase="2" [ngClass]="{'bg': true, 'two': true}" ></section>
+    <section *ngSwitchCase="3" [ngClass]="{'bg': true, 'three': true}" ></section>
+    <section *ngSwitchCase="4" [ngClass]="{'bg': true, 'four': true}" ></section>
+    <section *ngSwitchCase="5" [ngClass]="{'bg': true, 'five': true}" ></section>
+
+    <section *ngSwitchDefault class="bg">lol</section>
+
+</ng-container> -->

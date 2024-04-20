@@ -1,0 +1,27 @@
+<!-- 
+    <ng-container [ngSwitch]="item.id">
+
+        <img (click)="openDiary()" *ngSwitchCase="0" class="pic" [src]="item.img" alt="{{item.name}}">
+
+        <img (click)="openItem()" *ngSwitchCase="5" [ngClass]="{'pic': true, 'Megumin': true}" [src]="item.img" alt="{{item.name}}">
+        <img (click)="openItem()" *ngSwitchCase="6" [ngClass]="{'pic': true, 'Aqua': true}" [src]="item.img" alt="{{item.name}}">
+        <img (click)="openItem()" *ngSwitchCase="7" [ngClass]="{'pic': true, 'Darkness': true}" [src]="item.img" alt="{{item.name}}">
+        <img (click)="openItem()" *ngSwitchCase="8" [ngClass]="{'pic': true, 'Yun-Yun': true}" [src]="item.img" alt="{{item.name}}">
+        <img (click)="openItem()" *ngSwitchCase="9" [ngClass]="{'pic': true, 'Sylvia': true}" [src]="item.img" alt="{{item.name}}">
+        <img (click)="openItem()" *ngSwitchCase="10" [ngClass]="{'pic': true, 'Wiz': true}" [src]="item.img" alt="{{item.name}}">
+        <img (click)="openItem()" *ngSwitchCase="11" [ngClass]="{'pic': true, 'Eris': true}" [src]="item.img" alt="{{item.name}}">
+        <img (click)="openItem()" *ngSwitchCase="12" [ngClass]="{'pic': true, 'Kris': true}" [src]="item.img" alt="{{item.name}}">
+
+        <img (click)="openItem()" *ngSwitchDefault class="pic" [src]="item.img" alt="{{item.name}}">
+
+    </ng-container> -->
+
+        @if(item.name == "Diary"){
+            <img (click)="openDiary()" class="pic" [src]="item.img" alt="{{item.name}}">
+        }
+        @else{
+            <img (click)="openItem()" class="pic" [style]="item.color" [src]="item.img" alt="{{item.name}}">
+        }
+
+
+

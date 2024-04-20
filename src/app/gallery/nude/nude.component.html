@@ -1,0 +1,26 @@
+<section class="bigbox" (click)="openDialog()">
+
+<img class="pic" [src]="girl.img" alt="girl.name">
+
+<div class="name-box">
+    @switch(true) {
+        @case(this.girl.name.includes("Megumin")){ <p class="name" style="color: rgb(194, 65, 68);">{{this.girl.name}}</p> }
+        @case(this.girl.name.includes("Darkness")){ <p class="name" style="color: rgb(202, 143, 43); " >{{this.girl.name}}</p> }
+        @case(this.girl.name.includes("Aqua")){ <p class="name" style="color: rgb(39, 65, 126);" >{{this.girl.name}}</p> }
+        @case(this.girl.name.includes("Wiz")){ <p class="name" style="color: rgb(73, 53, 90);" >{{this.girl.name}}</p> }
+        @case(this.girl.name.includes("Kris")){ <p class="name" style="color: rgb(106, 147, 103);" >{{this.girl.name}}</p> }
+        @case(this.girl.name.includes("Eris")){ <p class="name" style="color: rgb(93, 92, 145);" >{{this.girl.name}}</p> }
+        @case(this.girl.name.includes("Sylvia")){ <p class="name" style="color: rgb(165, 46, 75);" >{{this.girl.name}}</p> }
+        @case(this.girl.name.includes("Yun-Yun")){ <p class="name"  style="color: rgb(49, 47, 59);">{{this.girl.name}}</p> }
+    }
+</div>
+
+</section>
+
+
+
+
+
+
+
+

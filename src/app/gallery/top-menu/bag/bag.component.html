@@ -1,0 +1,20 @@
+<section class="bg">
+
+    <!-- 
+    //рисуем все предметы в списке
+    //если их меньше 6, дорисовываем пустые места до 6
+    //если их число не кратно 3, дорисовываем пустые места до конца строчки-->
+
+    @for(item of itemsInBag; track item){
+        <app-item [item]="item"></app-item>
+    }
+    @if(6 > itemsInBag.length){
+        <div class="empty" *ngFor="let item of [].constructor(6-itemsInBag.length)"></div>
+    }
+    @else{
+        @if(!(itemsInBag.length % 3 === 0)){
+            <div class="empty" *ngFor="let item of [].constructor(3 - (itemsInBag.length % 3))"></div>
+        }
+    }
+
+</section>

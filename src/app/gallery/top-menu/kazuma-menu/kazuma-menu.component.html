@@ -1,0 +1,54 @@
+<section class="bg">
+
+    <button class="exitsmall" (click)="onClick()">X</button>
+    
+    <img class="kazuma" src="../../assets/kazuma/{{kazumaStats.img}}.jpg" alt="" >
+
+    <div class="headerbg">
+        <p class="header">Sato Kazuma</p>
+        @if(this.kazumaService.kazumaStats.panties == 8){
+            <p class="subheader">lvl 2 panties thief</p>
+        }
+        @else{
+            <p class="subheader">lvl 1 panties thief</p>
+        }
+        
+    </div>
+
+        <div class="table">
+            <p class="left">Health</p>
+            <p class="right"><span class="red">{{kazumaStats.health}}</span></p>
+
+            <p class="left">Mana</p> 
+            <p class="right"><span class="blue">{{kazumaStats.mana}}</span></p>
+
+            <p class="left">Panties</p>
+            <p class="right">{{kazumaStats.panties}}</p>
+
+            <p class="left">Shame</p>  
+            <p class="right">None</p>
+        </div>
+
+
+    <!-- <table class="table-style">
+        <caption class="header">Table</caption>
+        <tr>
+            <td td-style>Health</td>
+            <td>x1</td>
+        </tr>
+        <tr>
+            <td>Mana</td>
+            <td>x1</td>
+        </tr>
+        <tr>
+            <td>Panties</td>
+            <td>x1</td>
+        </tr>
+        <tr>
+            <td>Gold</td>
+            <td>x1</td>
+        </tr>
+    </table> -->
+
+</section>
+

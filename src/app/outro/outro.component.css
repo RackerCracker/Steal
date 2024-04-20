@@ -1,0 +1,103 @@
+.falsebg{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-image: url(../../assets/outro/1.jpg); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.play-circle{
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 230px;
+    width: 230px;
+
+    background-color: #f4f4f4ad;
+}
+
+.play{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 10px;
+
+    opacity: 0.8;
+
+    border-top: 25px solid black;
+    border-right: 25px solid black;
+
+    transform: translate(-15%, 0) rotate(45deg);
+}
+
+.bg{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    animation: BgAnimation both;
+    animation-duration: 84s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+
+    /* animation: BgAnimation 84s 1 both, TopBottomAnimation 8400ms 10; */
+}
+
+@keyframes TopBottomAnimation {
+    0%   { background-position: top }
+    100%  { background-position: bottom; }
+}
+
+@keyframes BgAnimation {
+    0%   { background-image: url(../../assets/outro/1.jpg); }
+    10%  { background-image: url(../../assets/outro/2.jpg); }
+    20%  { background-image: url(../../assets/outro/3.jpg); }
+    30%  { background-image: url(../../assets/outro/4.png); }
+    40%  { background-image: url(../../assets/outro/5.png); }
+    50%  { background-image: url(../../assets/outro/6.png); }
+    60%  { background-image: url(../../assets/outro/7.jpg); }
+    70%  { background-image: url(../../assets/outro/8.png); }
+    80%  { background-image: url(../../assets/outro/9.png); }
+    90%  { background-image: url(../../assets/outro/10.jpeg); }
+    100%  { background-image: url(../../assets/outro/11.png); }
+}
+
+.theend{
+    font: 120px Grobold;
+    -webkit-text-stroke: 2px rgb(225,225,225);
+
+    opacity: 0;
+
+    animation: TheEndAnimation forwards;
+    animation-delay: 84s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+
+@keyframes TheEndAnimation {
+    0%   { opacity: 0; }
+    100%  { opacity: 100; }
+}
+
+@font-face {
+    font-family: Grobold;
+    src: url(../../assets/GROBOLD.ttf) format('truetype');
+}

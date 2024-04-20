@@ -1,0 +1,35 @@
+<img [src]="location.img" class="bg">
+
+    <button class="exitsmall" (click)="close()">X</button>
+
+    <!-- Кацума -->
+    <div class="kazuma-box">
+        <img class="kazuma" src="../../../../assets/kazuma/{{kazumaStats.img}}.jpg" alt="">
+    </div>
+    
+    <!-- дневник -->
+    <div (click)="openDiary()" class="diary-box">
+        <div class="diary">
+            @if (kazumaService.newMessage){
+                <div class="exclamation"><p style="margin-top: 34px; margin-right: 8px">!</p></div>
+            }
+        </div>
+    </div>
+
+    <!-- мана и здоровье -->
+    <div class="health-mana-box">
+        @if (kazumaStats.health > 0 ){
+            <div class="health" *ngFor="let item of [].constructor(kazumaStats.health)"></div>
+        }
+        @if (kazumaStats.mana > 0 ){
+            <div class="mana" *ngFor="let item of [].constructor(kazumaStats.mana)"></div>
+        }
+    </div>       
+
+    <!-- предметы в локе -->
+
+    @for(item of this.location.items; track item){
+        <div class="item-bg" [style]="item.position">
+            <img class="pic"  (click)="Collect(item)" [src]="item.img" alt="">
+        </div>
+    }

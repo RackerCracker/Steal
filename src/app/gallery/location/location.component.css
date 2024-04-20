@@ -1,0 +1,76 @@
+.pic{
+    /* 
+    width: 300px;
+    height: 400px; */
+    
+    /* width: 48vh;
+    height: 64vh; */
+
+    width: 22vw;
+    height: 64vh;
+    
+    border-radius: 15px;
+
+    border: 1px solid rgb(225, 225, 225);
+    
+    object-fit: cover;
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px 1px rgba(0,0,0,0.2);
+
+}
+    
+.bigbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.2s, box-shadow 0.4s;
+    transform: scale(1.00); 
+}
+
+.bigbox:hover{
+    transition: transform 0.2s; 
+    transform: scale(1.02); 
+    filter: brightness(105%);
+
+    cursor: pointer;
+}
+
+.name-box{
+    position: absolute;
+
+    /* width: 48vh;
+    height: 64vh; */
+
+    width: 22vw;
+    height: 64vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+
+    opacity: 0;
+    transition: opacity 0.2s
+}
+
+.name-box:hover{
+    opacity: 100;
+    transition: opacity 0.2s;
+
+    background: linear-gradient(transparent 55%, #f4f4f4cf);    
+}
+
+.name{
+    position: relative;
+    top: 40%;
+
+    font: 24px/1.2 Grobold;
+    -webkit-text-stroke: 1px rgb(225, 225, 225);
+}
+    
+@font-face {
+    font-family: Grobold;
+    src: url(../../../assets/GROBOLD.ttf) format('truetype');
+}

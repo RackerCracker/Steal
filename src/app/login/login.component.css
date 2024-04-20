@@ -1,0 +1,77 @@
+
+.bg{
+
+    background-image: url(../../assets/login.png);
+    background-size: 100%;
+    /*background-color: pink;*/
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+  .mainblock {
+    width: 30em;
+    height: 18em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 600px;
+    background-color: #f4f4f4ad;
+    padding: 0.5em;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px 1px rgba(0,0,0,0.2);
+
+
+  }
+
+  h1 {
+    font: 36px/1.2 sans-serif;
+    font-family: Grobold;
+    margin: 0.4em 0 0.4em 0;
+  }
+
+  input {
+    width: 15em;
+    height: 1.7em;
+    margin: 0.2em 0;
+
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 6px;
+
+    font: 20px/1.2 Verdana;
+    background-color: rgb(240, 240, 240);
+  }
+
+  .login{
+    font: 20px/1.2 Grobold;
+
+    width: 7em;
+    height: 2.2em;
+    margin: 0.8em 0;
+
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 6px;
+    background-color: #ffd900;
+  }
+
+  .login:hover {
+    box-shadow: inset 0 0 0 3em #fedf31;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  @font-face {
+    font-family: Grobold;
+    src: url(../../assets/GROBOLD.ttf) format('truetype');
+  }
+
+
+

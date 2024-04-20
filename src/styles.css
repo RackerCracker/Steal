@@ -1,0 +1,62 @@
+html, body { height: 100%; }
+
+body { margin: 0; }
+
+/* preloading images to avois flickering */
+body:after {
+    content: 
+    url('../src/assets/outro/1.jpg') 
+    url('../src/assets/outro/2.jpg') 
+    url('../src/assets/outro/3.jpg') 
+    url('../src/assets/outro/4.png') 
+    url('../src/assets/outro/5.png') 
+    url('../src/assets/outro/6.png') 
+    url('../src/assets/outro/7.jpg') 
+    url('../src/assets/outro/8.png') 
+    url('../src/assets/outro/9.png') 
+    url('../src/assets/outro/10.jpeg')
+    url('../src/assets/outro/11.png')
+    url('../src/assets/blank.png')
+    url('../src/assets/yes.jpg')
+    url("../src/assets/outro.mp3");
+    position: absolute;
+    
+    width:0; 
+    height:0;
+
+    overflow: hidden;
+    z-index:-1;
+}
+
+/* transparent background of dialogs */
+.mdc-dialog__surface {
+    background: transparent !important;
+}
+
+.other-item-dialog {
+    border-radius: 10px;
+    /* border: 1px solid rgb(91, 91, 91); */
+    overflow: hidden;
+}
+
+
+.diary-dialog{
+    background-color: transparent !important;
+}
+
+.overlay-dialog{
+    border-radius: 5px;
+    /* border: 1px solid rgb(225, 225, 225); */
+    overflow: hidden;
+}
+
+.overlay-location-dialog{
+    border-radius: 5px;
+    /* border: 1px solid rgb(225, 225, 225); */
+    overflow: hidden;
+}
+
+::ng-deep mat-dialog-container {
+    background-color: transparent !important;
+}
+

@@ -1,0 +1,114 @@
+.bg{
+
+    background-image: url(../../assets/loading.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.loading-text{
+    font: 80px Grobold;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(225,225,225);
+}
+
+
+.stabilizer{
+
+    width: 365px;
+    height: 200px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    /* border: 2px solid rgb(225,225,225); */
+
+}
+
+.yellowbg{
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    /* border: 2px solid black; */
+
+    background-color: #ffd900;
+
+    background-clip: text;
+
+    animation: YellowBoxAnimation forwards;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes YellowBoxAnimation {
+    0%   { width: 10px; }
+    100%  { width: 365px; }
+}
+
+/* .dot1{
+    opacity: 0;
+
+    animation: LoadingAnimation1 forwards;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, end);
+}
+
+.dot2{
+    opacity: 0;
+
+    animation: LoadingAnimation2 forwards;
+
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, end);
+}
+
+.dot3{
+    opacity: 0;
+
+    animation: LoadingAnimation3 forwards;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, end);
+}
+
+
+@keyframes LoadingAnimation1 {
+    0%   { opacity: 0; }
+    25%  { opacity: 100; }
+    100%  { opacity: 100; }
+}
+
+@keyframes LoadingAnimation2 {
+    0%   { opacity: 0; }
+    50%  { opacity: 100; }
+    100%  { opacity: 100; }
+}
+
+@keyframes LoadingAnimation3 {
+    0%   { opacity: 0; }
+    75%  { opacity: 100; }
+    100%  { opacity: 100; }
+} */
+
+@font-face {
+    font-family: Grobold;
+    src: url(../../assets/GROBOLD.ttf) format('truetype');
+}

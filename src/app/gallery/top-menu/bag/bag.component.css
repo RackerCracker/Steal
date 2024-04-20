@@ -1,0 +1,40 @@
+.bg{
+
+    background-color: #f4f4f4ad;
+    padding: 4vh 1.83vw;
+
+    display: grid;
+    justify-content: space-between;
+    
+    column-gap: 0.916vw; /* 2 vh */
+    row-gap: 2vh;
+
+    grid-template-columns: repeat(auto-fill, 5.5vw);
+
+    height: minmax(25vh, max-content);
+    /* width: 42vh; */
+    width: 19.25vw;
+
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 15px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px 1px rgba(0,0,0,0.2);
+
+    margin: 4vh 0 4vh 1.83vw;
+
+}
+
+.empty{
+    
+    /* width: 12vh;
+    height: 12vh; */
+
+    width: 5.5vw;
+    height: 5.5vw;
+
+    border: 2px dashed rgb(91, 91, 91);
+}
+
+.empty:hover{
+    filter: brightness(105%);
+}
