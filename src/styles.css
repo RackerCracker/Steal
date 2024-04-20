@@ -5,6 +5,7 @@ body { margin: 0; }
 /* preloading images to avois flickering */
 body:after {
     content: 
+    url('assets/outro/0.png') 
     url('assets/outro/1.jpg') 
     url('assets/outro/2.jpg') 
     url('assets/outro/3.jpg') 
