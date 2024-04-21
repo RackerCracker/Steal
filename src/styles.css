@@ -23,7 +23,8 @@ body:after {
     url('assets/outro/11.png')
     url('https://github.com/RackerCracker/Steal/raw/main/src/assets/outro.mp3')
     url('assets/blank.png')
-    url('assets/yes.jpg');
+    url('assets/yes.jpg')
+    url('assets/GROBOLD.ttf');
     
     position: absolute;
     

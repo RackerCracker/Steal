@@ -21,7 +21,6 @@
     -webkit-text-stroke: 2px rgb(225,225,225);
 }
 
-
 .stabilizer{
 
     width: 365px;
@@ -51,7 +50,7 @@
     background-clip: text;
 
     animation: YellowBoxAnimation forwards;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }

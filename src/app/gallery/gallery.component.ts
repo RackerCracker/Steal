@@ -1,6 +1,6 @@
-import { AfterContentInit, AfterViewInit, Component, DoCheck, inject, OnInit} from '@angular/core';
+import { Component, DoCheck, inject, OnInit} from '@angular/core';
 import { CommonModule} from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 import { Girl } from '../services/girl';
 import { GirlsService } from '../services/girls.service';
@@ -74,7 +74,8 @@ export class GalleryComponent implements OnInit, DoCheck{
     LoadingConfig.panelClass = 'overlay-dialog';
     LoadingConfig.autoFocus = false;
 
-    if (document.readyState != "complete") { 
+    //document.readyState != "complete"
+    if (true) { 
 
       const dialogRef = this.dialog.open(LoadingComponent, LoadingConfig);
 
@@ -86,7 +87,7 @@ export class GalleryComponent implements OnInit, DoCheck{
       dialogRef.afterOpened().subscribe(_ => {
         setTimeout(() => {
            dialogRef.close();
-        }, 3000)
+        }, 5000)
       })
     }
 
