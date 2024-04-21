@@ -3,7 +3,7 @@
         {   
             "id": 0,
             "name": "Grassland",
-            "img": "/assets/locations/loc1.jpg",
+            "img": "./assets/locations/loc1.jpg",
             "notes": [
 
             ],
@@ -11,14 +11,14 @@
                 {
                     "id": 1,
                     "name": "Healing potion",
-                    "img": "/assets/items/health.png",
+                    "img": "./assets/items/health.png",
                     "description": "Best treatment after a slap",
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [
                         {
                             "name": "Wiz",
                             "note": "I tried to distract Wiz with healing potion. No wonder it didn't work. She sees them every day.",
-                            "img":"/assets/wiz/before.jpg",
+                            "img":"./assets/wiz/before.jpg",
                             "distraction": false
                         }
             
@@ -37,20 +37,20 @@
                 {
                     "id": 13,
                     "name": "Cabbage",
-                    "img": "/assets/items/cabbage.jpg",
+                    "img": "./assets/items/cabbage.jpg",
                     "description": "Live fast. Die young.",
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [
                         {
                             "name": "Darkness",
                             "note": "A cabbage flew right into Darkness! Did she just like it?",
-                            "img": "/assets/darkness/distracted1.jpg",
+                            "img": "./assets/darkness/distracted1.jpg",
                             "distraction": true
                         },
                         {
                             "name": "Aqua",
                             "note": "Seems like Aqua made some new friends. Makes sense, they are 90% water.",
-                            "img": "/assets/aqua/distracted2.jpg",
+                            "img": "./assets/aqua/distracted2.jpg",
                             "distraction": true
                         }       
                     ],
@@ -68,20 +68,20 @@
                 {
                     "id": 14,
                     "name": "Golden apples",
-                    "img": "/assets/items/apples.png",
+                    "img": "./assets/items/apples.png",
                     "description": "Almost as precious as myself",
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [
                         {
                             "name": "Kris",
                             "note": "What better way is to distract a thief than with gold? Good boy, Kazuma. Good boy.",
-                            "img": "/assets/kris/distracted1.png",
+                            "img": "./assets/kris/distracted1.png",
                             "distraction": true
                         },
                         {
                             "name": "Sylvia",
                             "note": "I tried to bribe Sylvia with golden apples. Could it work? Not in this universe.",
-                            "img": "/assets/sylvia/before.jpg",
+                            "img": "./assets/sylvia/before.jpg",
                             "distraction": false
                         }       
                     ],
@@ -101,7 +101,7 @@
         {   
             "id": 1, 
             "name": "Riverside",
-            "img": "/assets/locations/loc2.png",
+            "img": "./assets/locations/loc2.png",
             "notes": [
 
             ],
@@ -112,7 +112,7 @@
         {   
             "id": 2,
             "name": "Bridge",
-            "img": "/assets/locations/loc3.jpg",
+            "img": "./assets/locations/loc3.jpg",
             "notes": [
 
             ],
@@ -120,20 +120,20 @@
                 {
                     "id": 11,
                     "name": "Wine",
-                    "img": "/assets/items/wine.jpg",
+                    "img": "./assets/items/wine.jpg",
                     "description": "Aqua's favorite",
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [
                         {
                             "name": "Aqua",
                             "note": "Now Aqua's asleep, and no one can stop me!",
-                            "img":"/assets/aqua/distracted1.jpeg",
+                            "img":"./assets/aqua/distracted1.jpeg",
                             "distraction": true
                         },
                         {
                             "name": "Sylvia",
                             "note": "A whole bottle in a single gulp. Not your best guess, Kazuma.",
-                            "img": "/assets/sylvia/before.jpg",
+                            "img": "./assets/sylvia/before.jpg",
                             "distraction": false
                         }
                     ],
@@ -151,20 +151,20 @@
                 {
                     "id": 2,
                     "name": "Mana potion",
-                    "img": "/assets/items/mana.png",
+                    "img": "./assets/items/mana.png",
                     "description": "Easy way to cast spells",
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [
                         {
                             "name": "Megumin",
                             "note": "I gave Megumin a mana potion. Guess what? She made another EXPLOSION!",
-                            "img":"/assets/megumin/distracted2.jpeg",
+                            "img":"./assets/megumin/distracted2.jpeg",
                             "distraction": true
                         },
                         {
                             "name": "Wiz",
                             "note": "I gave a mana potion to Wiz. She thanked me. Wow.",
-                            "img":"/assets/wiz/before.jpg",
+                            "img":"./assets/wiz/before.jpg",
                             "distraction": false
                         }
                     ],
@@ -184,7 +184,7 @@
         {   
             "id": 3,
             "name": "Street",
-            "img": "/assets/locations/loc4.jpg",
+            "img": "./assets/locations/loc4.jpg",
             "notes": [
                 
             ],
@@ -192,14 +192,14 @@
                 {
                     "id": 0,
                     "name": "Rare potion",
-                    "img": "/assets/items/rare.png",
+                    "img": "./assets/items/rare.png",
                     "description": "Who knows what it does?",
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [
                         {
                             "name": "Wiz",
                             "note": "Looks like Wiz took a keen interest in this potion. Good thing I saved it!",
-                            "img":"/assets/wiz/distracted.png",
+                            "img":"./assets/wiz/distracted.png",
                             "distraction": true
                         }
                     ],
@@ -217,19 +217,19 @@
                 {
                     "id": 12,
                     "name": "Chomusuke",
-                    "img": "/assets/items/chomusuke.png",
+                    "img": "./assets/items/chomusuke.png",
                     "description": "Kawaii little demon. Nya!",
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [{
                         "name": "Megumin",
                         "note": "Megumin doesn't seem to be really glad. At least, her hands are busy.",
-                        "img": "/assets/megumin/distracted1.jpg",
+                        "img": "./assets/megumin/distracted1.jpg",
                         "distraction": true
                     },
                     {
                         "name": "Yun-Yun",
                         "note": "Yun-Yun adores the little kitty. Time to act!",
-                        "img": "/assets/yunyun/distracted1.jpg",
+                        "img": "./assets/yunyun/distracted1.jpg",
                         "distraction": true
                     }
                     ],
@@ -252,14 +252,14 @@
     {
         "id": 0,
         "name": "Rare potion",
-        "img": "/assets/items/rare.png",
+        "img": "./assets/items/rare.png",
         "description": "Who knows what it does?",
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [
             {
                 "name": "Wiz",
                 "note": "Looks like Wiz took a keen interest in this potion. Good thing I saved it for her!",
-                "img":"/assets/wiz/distracted.jpg",
+                "img":"./assets/wiz/distracted.jpg",
                 "distraction": true
             }
         ],
@@ -277,14 +277,14 @@
     {
         "id": 1,
         "name": "Healing potion",
-        "img": "/assets/items/health.png",
+        "img": "./assets/items/health.png",
         "description": "Best treatment after a slap",
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [
             {
                 "name": "Wiz",
                 "note": "I tried to distract Wiz with healing potion. No wonder it didn't work. She sees them every day.",
-                "img":"/assets/wiz/before.jpg",
+                "img":"./assets/wiz/before.jpg",
                 "distraction": false
             }
 
@@ -303,20 +303,20 @@
     {
         "id": 2,
         "name": "Mana potion",
-        "img": "/assets/items/mana.png",
+        "img": "./assets/items/mana.png",
         "description": "Easy way to cast spells",
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [
             {
                 "name": "Megumin",
                 "note": "I gave Megumin a mana potion. Guess what? She made another EXPLOSION! ...now she is tired...",
-                "img":"/assets/megumin/distracted2.jpeg",
+                "img":"./assets/megumin/distracted2.jpeg",
                 "distraction": true
             },
             {
                 "name": "Wiz",
                 "note": "I gave a mana potion to Wiz. She thanked me. Wow.",
-                "img":"/assets/wiz/before.jpg",
+                "img":"./assets/wiz/before.jpg",
                 "distraction": false
             }
         ],
@@ -334,7 +334,7 @@
     {   
         "id": 3,
         "name": "Megumin's panties",
-        "img": "/assets/items/panties.jpg",
+        "img": "./assets/items/panties.jpg",
         "description": "A place where you can feel at home",
         "color": "border: 2px dashed rgb(194, 65, 68);",
         "usable": [],
@@ -359,7 +359,7 @@
     {
         "id": 4,
         "name": "Aqua's panties",
-        "img": "/assets/items/panties.jpg",
+        "img": "./assets/items/panties.jpg",
         "description": "As blue as water itself",
         "color": "border: 2px dashed rgb(39, 65, 126);",
         "usable": [],
@@ -377,7 +377,7 @@
     {
         "id": 5,
         "name": "Darkness's panties",
-        "img": "/assets/items/panties.jpg",
+        "img": "./assets/items/panties.jpg",
         "description": "Chain mail everywhere. Sure.",
         "color": "border: 2px dashed rgb(202, 143, 43);",
         "usable": [],
@@ -401,7 +401,7 @@
     {
         "id": 6,
         "name": "Yun-Yun's panties",
-        "img": "/assets/items/panties.jpg",
+        "img": "./assets/items/panties.jpg",
         "description": "Decorated with a red ribbon",
         "color": "border: 2px dashed rgb(49, 47, 59);",
         "usable": [],
@@ -419,7 +419,7 @@
     {
         "id": 7,
         "name": "Sylvia's panties",
-        "img": "/assets/items/panties.jpg",
+        "img": "./assets/items/panties.jpg",
         "description": "Red. Dark. Huge.",
         "color": "border: 2px dashed rgb(165, 46, 75);",
         "usable": [],
@@ -437,7 +437,7 @@
     {
         "id": 8,
         "name": "Wiz's panties",
-        "img": "/assets/items/panties.jpg",
+        "img": "./assets/items/panties.jpg",
         "usable": [],
         "description": "Stolen from a dead body",
         "color": "border: 2px dashed rgb(73, 53, 90);",
@@ -456,7 +456,7 @@
     {
         "id": 9,
         "name": "Eris's panties",
-        "img": "/assets/items/panties.jpg",
+        "img": "./assets/items/panties.jpg",
         "description": "From the hands of the god herself. Almost.",
         "color": "border: 2px dashed rgb(93, 92, 145);",
         "usable": [],
@@ -474,7 +474,7 @@
     {
         "id": 10,
         "name": "Kris's panties",
-        "img": "/assets/items/panties.jpg",
+        "img": "./assets/items/panties.jpg",
         "description": "Stolen from a thief",
         "color": "border: 2px dashed rgb(106, 147, 103);",
         "usable": [],
@@ -492,20 +492,20 @@
     {
         "id": 11,
         "name": "Wine",
-        "img": "/assets/items/wine.jpg",
+        "img": "./assets/items/wine.jpg",
         "description": "Aqua's favorite",
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [
             {
                 "name": "Aqua",
                 "note": "Now Aqua's asleep, and no one can stop me!",
-                "img":"/assets/aqua/distracted1.jpeg",
+                "img":"./assets/aqua/distracted1.jpeg",
                 "distraction": true
             },
             {
                 "name": "Sylvia",
                 "note": "A whole bottle in a single gulp. Not your best guess, Kazuma.",
-                "img": "/assets/sylvia/before.jpg",
+                "img": "./assets/sylvia/before.jpg",
                 "distraction": false
             }
         ],
@@ -524,19 +524,19 @@
     {
         "id": 12,
         "name": "Chomusuke",
-        "img": "/assets/items/chomusuke.png",
+        "img": "./assets/items/chomusuke.png",
         "description": "Kawaii little demon. Nya!",
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [{
             "name": "Megumin",
             "note": "Megumin doesn't seem to be really glad. At least, her hands are busy.",
-            "img": "/assets/megumin/distracted1.jpg",
+            "img": "./assets/megumin/distracted1.jpg",
             "distraction": true
         },
         {
             "name": "Yun-Yun",
             "note": "Yun-Yun adores the little kitty. Time to act!",
-            "img": "/assets/yunyun/distracted1.jpg",
+            "img": "./assets/yunyun/distracted1.jpg",
             "distraction": true
         }
         ],
@@ -554,20 +554,20 @@
     {
         "id": 13,
         "name": "Cabbage",
-        "img": "/assets/items/cabbage.jpg",
+        "img": "./assets/items/cabbage.jpg",
         "description": "Live fast. Die young.",
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [
             {
                 "name": "Darkness",
                 "note": "A cabbage flew right into Darkness! Did she just like it?",
-                "img": "/assets/darkness/distracted1.png",
+                "img": "./assets/darkness/distracted1.png",
                 "distraction": true
             },
             {
                 "name": "Aqua",
                 "note": "Seems like Aqua made some new friends. Makes sense, they are 90% water.",
-                "img":"/assets/aqua/distracted2.jpg",
+                "img":"./assets/aqua/distracted2.jpg",
                 "distraction": true
             }       
         ],
@@ -585,20 +585,20 @@
     {
         "id": 14,
         "name": "Golden apples",
-        "img": "/assets/items/apples.png",
+        "img": "./assets/items/apples.png",
         "description": "Almost as precious as myself",
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [
             {
                 "name": "Kris",
                 "note": "What better way is to distract a thief than with gold? Good boy, Kazuma. Good boy.",
-                "img": "/assets/kris/distracted1.png",
+                "img": "./assets/kris/distracted1.png",
                 "distraction": true
             },
             {
                 "name": "Sylvia",
                 "note": "I tried to bribe Sylvia with golden apples. Could it work? Not in this universe.",
-                "img": "/assets/sylvia/before.jpg",
+                "img": "./assets/sylvia/before.jpg",
                 "distraction": false
             }       
         ],

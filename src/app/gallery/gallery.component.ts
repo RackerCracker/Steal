@@ -19,7 +19,6 @@ import { LocationComponent } from './location/location.component';
 import { EndgameComponent } from './endgame/endgame.component';
 
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
-import { DialogRef } from '@angular/cdk/dialog';
 
 
 @Component({

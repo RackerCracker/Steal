@@ -4,7 +4,7 @@ html, body { height: 100%; }
 
 body { margin: 0; }
 
-/* preloading images to avois flickering */
+/* preloading images to avoid flickering */
 body:after {
     content: 
     url('assets/outro/0.png') 

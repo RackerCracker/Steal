@@ -19,7 +19,7 @@ export class ItemsService {
     {
       "id": 255,
       "name": "Diary",
-      "img": "/assets/items/diary.png",
+      "img": "./assets/items/diary.png",
       "description": "Hope no one will see it",
       "color": "border: 2px dashed rgb(91,91,91);",
       "usable": [],
