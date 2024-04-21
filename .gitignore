@@ -1,6 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 /src/assets/_don't need
+/src/assets/items/prerequisits
+**/unnesessary
 
 # Compiled output
 /dist

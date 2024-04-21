@@ -8,6 +8,7 @@ body { margin: 0; }
 body:after {
     content:
     url('assets/loading.jpg')
+    url('assets/items/diary_opened.png')
     url('assets/outro/0.png') 
     url('assets/outro/1.jpg') 
     url('assets/outro/2.jpg') 
