@@ -15,7 +15,7 @@ export class OutroComponent{
     this.start = true;
 
     let audio = new Audio()
-    audio.src = "../../assets/outro.mp3"
+    audio.src = "https://github.com/RackerCracker/Steal/raw/main/src/assets/outro.mp3"
     audio.load();
     audio.play();
   }
