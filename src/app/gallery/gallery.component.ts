@@ -31,9 +31,9 @@ import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 })
 export class GalleryComponent implements OnInit, DoCheck{
 
-  loading = true;
+  // loading = true;
 
-  greeting = true;
+  greeting = true; //unnesessary
   theend = false;
 
   //импортируем (связываемся) со статами Кацумы в сервисе
@@ -74,9 +74,9 @@ export class GalleryComponent implements OnInit, DoCheck{
     LoadingConfig.panelClass = 'overlay-dialog';
     LoadingConfig.autoFocus = false;
 
-    if (this.loading){ 
+    if (document.readyState != "complete") { 
 
-      const dialogRef = this.dialog.open(LoadingComponent, LoadingConfig); 
+      const dialogRef = this.dialog.open(LoadingComponent, LoadingConfig);
 
       window.addEventListener("load", (event) => {
         console.log("page is fully loaded");
