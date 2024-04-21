@@ -1,4 +1,4 @@
-@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body { height: 100%; }
 
@@ -6,7 +6,8 @@ body { margin: 0; }
 
 /* preloading images to avoid flickering */
 body:after {
-    content: 
+    content:
+    url('assets/loading.jpg')
     url('assets/outro/0.png') 
     url('assets/outro/1.jpg') 
     url('assets/outro/2.jpg') 
@@ -19,9 +20,10 @@ body:after {
     url('assets/outro/9.png') 
     url('assets/outro/10.jpeg')
     url('assets/outro/11.png')
+    url('assets/outro.mp3')
     url('assets/blank.png')
-    url('assets/yes.jpg')
-    url("assets/outro.mp3");
+    url('assets/yes.jpg');
+    
     position: absolute;
     
     width:0; 

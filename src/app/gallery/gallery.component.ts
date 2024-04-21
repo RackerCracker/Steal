@@ -32,7 +32,6 @@ import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 export class GalleryComponent implements OnInit, DoCheck{
 
   loading = true;
-  startloading = true;
 
   greeting = true;
   theend = false;
@@ -55,12 +54,6 @@ export class GalleryComponent implements OnInit, DoCheck{
 
   ngOnInit() {
 
-    //достаем список локаций и привязываем к местным переменным
-    this.locationsService.goGetLocations().then((locationsList: Location[]) => {
-      this.locationsList = locationsList;
-      console.log(locationsList)
-    });
-
     //диалог для приветствия
     const GreetingConfig = new MatDialogConfig();
 
@@ -68,9 +61,8 @@ export class GalleryComponent implements OnInit, DoCheck{
     GreetingConfig.height = '560px'; //650
     GreetingConfig.autoFocus = false;
 
-    if (this.loading){ this.dialog.open(ContractComponent, GreetingConfig); }  
-
-
+    if (this.greeting){ this.dialog.open(ContractComponent, GreetingConfig); }   
+    
     //диалог для загрузки
     const LoadingConfig = new MatDialogConfig();
 
@@ -98,6 +90,13 @@ export class GalleryComponent implements OnInit, DoCheck{
       })
     }
 
+    //достаем список локаций и привязываем к местным переменным
+    this.locationsService.goGetLocations().then((locationsList: Location[]) => {
+      this.locationsList = locationsList;
+      console.log(locationsList)
+    });
+
+ 
   }
 
   ngDoCheck(){
