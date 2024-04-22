@@ -42,7 +42,7 @@ body:after {
 
 .other-item-dialog {
     border-radius: 10px;
-    /* border: 1px solid rgb(91, 91, 91); */
+    border: 1px solid rgb(91, 91, 91);
     overflow: hidden;
 }
 

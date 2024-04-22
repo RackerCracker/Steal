@@ -17,8 +17,8 @@
                     "usable": [
                         {
                             "name": "Wiz",
-                            "note": "I tried to distract Wiz with healing potion. No wonder it didn't work. She sees them every day.",
-                            "img":"./assets/wiz/before.jpg",
+                            "note": "Could a healing potion impress Wiz? Nope. She sees them every day.",
+                            "img":"wiz/before.jpg",
                             "distraction": false
                         }
             
@@ -38,19 +38,19 @@
                     "id": 13,
                     "name": "Cabbage",
                     "img": "./assets/items/cabbage.jpg",
-                    "description": "Live fast. Die young.",
+                    "description": "Live fast. Die young",
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [
                         {
                             "name": "Darkness",
-                            "note": "A cabbage flew right into Darkness! Did she just like it?",
-                            "img": "./assets/darkness/distracted1.jpg",
+                            "note": "A cabbage flew right into Darkness! Wait. Did she just like it?",
+                            "img": "darkness/distracted1.jpg",
                             "distraction": true
                         },
                         {
                             "name": "Aqua",
                             "note": "Seems like Aqua made some new friends. Makes sense, they are 90% water.",
-                            "img": "./assets/aqua/distracted2.jpg",
+                            "img": "aqua/distracted2.jpg",
                             "distraction": true
                         }       
                     ],
@@ -59,7 +59,7 @@
                             "name": "Eat",
                             "health": 1,
                             "mana": 0,
-                            "note": "Couldn't I find a better use for a flying cabbage? It tastes good, at least."
+                            "note": "Couldn't I find a better use for a flying cabbage? It tastes good, though."
                         }
                     ],
                     "note": "A flying cabbage. I wonder what Darkness would think about it.",
@@ -75,13 +75,13 @@
                         {
                             "name": "Kris",
                             "note": "What better way is to distract a thief than with gold? Good boy, Kazuma. Good boy.",
-                            "img": "./assets/kris/distracted1.png",
+                            "img": "kris/distracted1.png",
                             "distraction": true
                         },
                         {
                             "name": "Sylvia",
                             "note": "I tried to bribe Sylvia with golden apples. Could it work? Not in this universe.",
-                            "img": "./assets/sylvia/before.jpg",
+                            "img": "sylvia/before.jpg",
                             "distraction": false
                         }       
                     ],
@@ -100,13 +100,57 @@
         },
         {   
             "id": 1, 
-            "name": "Riverside",
-            "img": "./assets/locations/loc2.png",
+            "name": "Lane",
+            "img": "./assets/locations/loc5.png",
             "notes": [
 
             ],
             "items": [
-
+                {
+                    "id": 15,
+                    "name": "Snow sprite",
+                    "img": "./assets/items/snow.png",
+                    "description": "A friendly little creature",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [
+                        {
+                            "name": "Eris",
+                            "note": "Eris seemed quite lonely between the worlds. Now she has a company!",
+                            "img": "eris/distracted1.png",
+                            "distraction": true
+                        }    
+                    ],
+                    "effects": [
+                        {
+                            "name": "Drain",
+                            "health": 0,
+                            "mana": 1,
+                            "note": "Probably an evil thing to do, but who cares with such things at stake?"
+                        }
+                    ],
+                    "note": "I found a little snow sprite. Who could've guessed it can survive in the middle of the summer?",
+                    "position": "position: absolute; left: 195px; bottom: 195px;"
+                },
+                {
+                    "id": 16,
+                    "name": "Dirty mug",
+                    "img": "./assets/items/mug.png",
+                    "description": "Do I even need it?",
+                    "color": "border: 2px dashed rgb(91,91,91)",
+                    "usable": [
+            
+                    ],
+                    "effects": [
+                        {
+                            "name": "Look in",
+                            "health": 0,
+                            "mana": 0,
+                            "note": "I looked into the dirty mug. It looked into me. A revelation."
+                        }
+                    ],
+                    "note": "Good old RPG Kazuma. Takes everything that is not nailed down.",
+                    "position": "position: absolute; right: 350px; bottom: 55px;"
+                }
             ]
         },
         {   
@@ -127,13 +171,13 @@
                         {
                             "name": "Aqua",
                             "note": "Now Aqua's asleep, and no one can stop me!",
-                            "img":"./assets/aqua/distracted1.jpeg",
+                            "img":"aqua/distracted1.jpeg",
                             "distraction": true
                         },
                         {
                             "name": "Sylvia",
                             "note": "A whole bottle in a single gulp. Not your best guess, Kazuma.",
-                            "img": "./assets/sylvia/before.jpg",
+                            "img": "sylvia/before.jpg",
                             "distraction": false
                         }
                     ],
@@ -158,13 +202,13 @@
                         {
                             "name": "Megumin",
                             "note": "I gave Megumin a mana potion. Guess what? She made another EXPLOSION!",
-                            "img":"./assets/megumin/distracted2.jpeg",
+                            "img":"megumin/distracted2.jpeg",
                             "distraction": true
                         },
                         {
                             "name": "Wiz",
-                            "note": "I gave a mana potion to Wiz. She thanked me. Wow.",
-                            "img":"./assets/wiz/before.jpg",
+                            "note": "A 'Thank you' in exchange for a mana potion. Wow.",
+                            "img":"wiz/before.jpg",
                             "distraction": false
                         }
                     ],
@@ -199,7 +243,7 @@
                         {
                             "name": "Wiz",
                             "note": "Looks like Wiz took a keen interest in this potion. Good thing I saved it!",
-                            "img":"./assets/wiz/distracted.png",
+                            "img":"wiz/distracted.png",
                             "distraction": true
                         }
                     ],
@@ -222,14 +266,14 @@
                     "color": "border: 2px dashed rgb(91,91,91)",
                     "usable": [{
                         "name": "Megumin",
-                        "note": "Megumin doesn't seem to be really glad. At least, her hands are busy.",
-                        "img": "./assets/megumin/distracted1.jpg",
+                        "note": "Megumin doesn't seem to be really happy. Well, at least her hands are busy.",
+                        "img": "megumin/distracted1.jpg",
                         "distraction": true
                     },
                     {
                         "name": "Yun-Yun",
                         "note": "Yun-Yun adores the little kitty. Time to act!",
-                        "img": "./assets/yunyun/distracted1.jpg",
+                        "img": "yunyun/distracted1.jpg",
                         "distraction": true
                     }
                     ],
@@ -241,7 +285,7 @@
                             "note": "I've pet a kitty. What a nice day it is!"
                         }
                     ],
-                    "note": "Look who I found. Chomusuke! It's time to bring him back.",
+                    "note": "Look who I found. Chomusuke! It's time to bring him home.",
                     "position": "position: absolute; right: 140px; top:25px;"
                 }
             ]
@@ -259,7 +303,7 @@
             {
                 "name": "Wiz",
                 "note": "Looks like Wiz took a keen interest in this potion. Good thing I saved it for her!",
-                "img":"./assets/wiz/distracted.jpg",
+                "img":"wiz/distracted.jpg",
                 "distraction": true
             }
         ],
@@ -283,8 +327,8 @@
         "usable": [
             {
                 "name": "Wiz",
-                "note": "I tried to distract Wiz with healing potion. No wonder it didn't work. She sees them every day.",
-                "img":"./assets/wiz/before.jpg",
+                "note": "Could a healing potion impress Wiz? Nope. She sees them every day.",
+                "img":"wiz/before.jpg",
                 "distraction": false
             }
 
@@ -309,14 +353,14 @@
         "usable": [
             {
                 "name": "Megumin",
-                "note": "I gave Megumin a mana potion. Guess what? She made another EXPLOSION! ...now she is tired...",
-                "img":"./assets/megumin/distracted2.jpeg",
+                "note": "I gave Megumin a mana potion. Guess what? She made another EXPLOSION!",
+                "img":"/megumin/distracted2.jpeg",
                 "distraction": true
             },
             {
                 "name": "Wiz",
-                "note": "I gave a mana potion to Wiz. She thanked me. Wow.",
-                "img":"./assets/wiz/before.jpg",
+                "note": "A 'Thank you' in exchange for a mana potion. Wow.",
+                "img":"wiz/before.jpg",
                 "distraction": false
             }
         ],
@@ -335,7 +379,7 @@
         "id": 3,
         "name": "Megumin's panties",
         "img": "./assets/items/panties.jpg",
-        "description": "A place where you can feel at home",
+        "description": "A place to feel at home",
         "color": "border: 2px dashed rgb(194, 65, 68);",
         "usable": [],
         "effects": [
@@ -360,7 +404,7 @@
         "id": 4,
         "name": "Aqua's panties",
         "img": "./assets/items/panties.jpg",
-        "description": "As blue as water itself",
+        "description": "Never knew they exist",
         "color": "border: 2px dashed rgb(39, 65, 126);",
         "usable": [],
         "effects": [
@@ -368,7 +412,7 @@
                 "name": "Smell",
                 "health": 0,
                 "mana": 1,
-                "note": "Aah. A breath of an ocean. So invigorating."
+                "note": "A-a-h. A breath of an ocean. So invigorating."
             }
         ],
         "note": "",
@@ -498,14 +542,14 @@
         "usable": [
             {
                 "name": "Aqua",
-                "note": "Now Aqua's asleep, and no one can stop me!",
-                "img":"./assets/aqua/distracted1.jpeg",
+                "note": "Every time Aqua drops down drunk, is that a waterfall?",
+                "img":"aqua/distracted1.jpeg",
                 "distraction": true
             },
             {
                 "name": "Sylvia",
                 "note": "A whole bottle in a single gulp. Not your best guess, Kazuma.",
-                "img": "./assets/sylvia/before.jpg",
+                "img": "sylvia/before.jpg",
                 "distraction": false
             }
         ],
@@ -529,14 +573,14 @@
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [{
             "name": "Megumin",
-            "note": "Megumin doesn't seem to be really glad. At least, her hands are busy.",
-            "img": "./assets/megumin/distracted1.jpg",
+            "note": "Megumin doesn't look happy. Okay. At least her hands are busy.",
+            "img": "megumin/distracted1.jpg",
             "distraction": true
         },
         {
             "name": "Yun-Yun",
             "note": "Yun-Yun adores the little kitty. Time to act!",
-            "img": "./assets/yunyun/distracted1.jpg",
+            "img": "yunyun/distracted1.jpg",
             "distraction": true
         }
         ],
@@ -555,19 +599,19 @@
         "id": 13,
         "name": "Cabbage",
         "img": "./assets/items/cabbage.jpg",
-        "description": "Live fast. Die young.",
+        "description": "Live fast. Die young",
         "color": "border: 2px dashed rgb(91,91,91)",
         "usable": [
             {
                 "name": "Darkness",
                 "note": "A cabbage flew right into Darkness! Did she just like it?",
-                "img": "./assets/darkness/distracted1.png",
+                "img": "darkness/distracted1.png",
                 "distraction": true
             },
             {
                 "name": "Aqua",
                 "note": "Seems like Aqua made some new friends. Makes sense, they are 90% water.",
-                "img":"./assets/aqua/distracted2.jpg",
+                "img":"aqua/distracted2.jpg",
                 "distraction": true
             }       
         ],
@@ -576,7 +620,7 @@
                 "name": "Eat",
                 "health": 1,
                 "mana": 0,
-                "note": "Couldn't I find a better use for a flying cabbage? It tastes good, at least."
+                "note": "Couldn't I find a better use for a flying cabbage? It tastes good, though."
             }
         ],
         "note": "A flying cabbage. I wonder what Darkness would think about it.",
@@ -592,13 +636,13 @@
             {
                 "name": "Kris",
                 "note": "What better way is to distract a thief than with gold? Good boy, Kazuma. Good boy.",
-                "img": "./assets/kris/distracted1.png",
+                "img": "kris/distracted1.png",
                 "distraction": true
             },
             {
                 "name": "Sylvia",
                 "note": "I tried to bribe Sylvia with golden apples. Could it work? Not in this universe.",
-                "img": "./assets/sylvia/before.jpg",
+                "img": "sylvia/before.jpg",
                 "distraction": false
             }       
         ],
@@ -612,6 +656,51 @@
         ],
         "note": "Apples! Made of gold! Am I able to sell it and just buy what I want?",
         "position": "position: absolute; left: 230px; top: 70px;"
+    },
+    {
+        "id": 15,
+        "name": "Snow sprite",
+        "img": "./assets/items/snow.png",
+        "description": "A friendly little creature",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [
+            {
+                "name": "Eris",
+                "note": "Eris seemed quite lonely between the worlds. Now she has a company!",
+                "img": "eris/distracted1.jpg",
+                "distraction": true
+            }
+        ],
+        "effects": [
+            {
+                "name": "Drain",
+                "health": 0,
+                "mana": 1,
+                "note": "Probably an evil thing to do, but who cares with such things at stake?"
+            }
+        ],
+        "note": "I found a little snow sprite. Who could've guessed it can survive in the middle of the summer?",
+        "position": "position: absolute; left: 195px; bottom: 195px;"
+    },
+    {
+        "id": 16,
+        "name": "Dirty mug",
+        "img": "./assets/items/mug.png",
+        "description": "Do I even need it?",
+        "color": "border: 2px dashed rgb(91,91,91)",
+        "usable": [
+
+        ],
+        "effects": [
+            {
+                "name": "Look in",
+                "health": 0,
+                "mana": 0,
+                "note": "I looked into the dirty mug. It looked into me. A revelation."
+            }
+        ],
+        "note": "Good old RPG Kazuma. Takes everything that is not nailed down.",
+        "position": "position: absolute; right: 350px; bottom: 55px;"
     }
     ]
 

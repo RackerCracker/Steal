@@ -114,7 +114,7 @@ export class OverlayComponent {
 
       }
       else {
-        if (!this.notesService.notesWritten.includes( "I need mana to start casting. A potion? Or is there another way?")){
+        if (!this.notesService.notesWritten.includes( "I need mana to cast. A potion? Or is there another way?")){
           this.notesService.AddNote("I need mana to start casting. A potion? Or is there another way?");
           this.kazumaService.newMessage = true;
         } //не повторяем запись, если она уже есть
@@ -127,8 +127,8 @@ export class OverlayComponent {
 
   Give(item: Item){
     if (this.girl.distracted){
-      if (!this.notesService.notesWritten.includes(this.girl.name + " is already distracted. I'll find a better use for " + item.name)){
-        this.notesService.AddNote(this.girl.name + " is already distracted. I'll find a better use for " + item.name);
+      if (!this.notesService.notesWritten.includes(this.girl.name + " is already distracted. I'll find a better use for " + item.name + ".")){
+        this.notesService.AddNote(this.girl.name + " is already distracted. I'll find a better use for " + item.name + ".");
         this.kazumaService.newMessage = true;
       } //не повторяем запись, если она уже есть
     }

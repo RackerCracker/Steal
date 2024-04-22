@@ -14,8 +14,8 @@ export class KazumaService {
   }
 
   kazumaStats: Kazuma = {
-    "health": 10,
-    "mana": 10,
+    "health": 1,
+    "mana": 0,
     "panties": 0,
     "img": "basic",
     "new_note": false,
