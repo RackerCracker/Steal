@@ -87,10 +87,6 @@ export class OverlayComponent {
         this.itemsService.AddItem(item); //добавляем предмет в сумку
         this.kazumaService.PantiesPlus();           //изменяем статы Кацумы
 
-        if (this.kazumaService.kazumaStats.panties == 8){
-          this.kazumaService.ChangeImg("respect");              //меняем портрет Кацумы, если добился успеха
-        }
-
         // ---
 
         if ((!this.girl.distracted) && (this.girl.name !== "Sylvia")){
@@ -107,6 +103,12 @@ export class OverlayComponent {
             }
           }
         }
+
+        // ---
+
+        if ((this.kazumaService.kazumaStats.panties == 8) && (this.kazumaStats.health > 0)){
+          this.kazumaService.ChangeImg("respect");              //меняем портрет Кацумы, если добился успеха
+        }
   
         // if ( (this.notesService.notesWritten.includes("Slap!")) && (!this.notesService.notesWritten.includes("Could I try and distract the girls? I am too young to die (again)."))){   //добавляем запись о том, что стоило бы поискать отвлечение
         //   this.notesService.AddNote("Could I try and distract the girls? I am too young to die (again).");   //не повторяем запись, если она уже есть
@@ -114,8 +116,8 @@ export class OverlayComponent {
 
       }
       else {
-        if (!this.notesService.notesWritten.includes( "I need mana to cast. A potion? Or is there another way?")){
-          this.notesService.AddNote("I need mana to start casting. A potion? Or is there another way?");
+        if (!this.notesService.notesWritten.includes("I need mana to cast. A potion? Or is there another way?")){
+          this.notesService.AddNote("I need mana to cast. A potion? Or is there another way?");
           this.kazumaService.newMessage = true;
         } //не повторяем запись, если она уже есть
       }
