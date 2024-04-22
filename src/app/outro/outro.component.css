@@ -51,6 +51,7 @@
     height: 100vh;
 
     animation: BgAnimation both;
+    animation-delay: 1500ms;
     animation-duration: 84s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
