@@ -4,14 +4,17 @@ import { RouterModule } from '@angular/router';
 
 import { BagComponent } from './bag/bag.component';
 import { KazumaMenuComponent } from './kazuma-menu/kazuma-menu.component';
+import { RulesComponent } from '../rules/rules.component';
 
 import { Kazuma } from '../../services/kazuma';
 import { KazumaService } from '../../services/kazuma.service';
 
+import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
+
 @Component({
   selector: 'app-top-menu',
   standalone: true,
-  imports: [RouterModule, CommonModule, KazumaMenuComponent, BagComponent],
+  imports: [RouterModule, CommonModule, KazumaMenuComponent, BagComponent, RulesComponent],
   templateUrl: './top-menu.component.html',
   styleUrl: './top-menu.component.css'
 })
@@ -27,13 +30,20 @@ export class TopMenuComponent {
   kazumaService: KazumaService = inject(KazumaService);
   kazumaStats: Kazuma = this.kazumaService.kazumaStats;
 
-  constructor(){
-    
-    // this.kazumaService.goGetStats().then((stats: Kazuma[]) => {
-    //   this.kazumaStats = stats[0];
-    //   console.log(this.kazumaStats)
-    // });
+  showRules(){
+
+    //диалог c правилами
+    const GreetingConfig = new MatDialogConfig();
+
+    GreetingConfig.width = '390px';  //450
+    GreetingConfig.height = '560px'; //650
+    GreetingConfig.autoFocus = false;
+   
+    this.dialog.open(RulesComponent, GreetingConfig);      
 
   }
+
+  constructor(private dialog: MatDialog){}
+
 
 }

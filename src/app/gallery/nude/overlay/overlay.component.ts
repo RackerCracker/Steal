@@ -39,7 +39,7 @@ export class OverlayComponent {
   kazumaService: KazumaService = inject(KazumaService); //для изменения статов Кацумы и их отображения
   girlService: GirlsService = inject(GirlsService); //чтобы убирать предметы из списка взаимодействия после взаимодействия
 
-  itemsList!: Item[]; //надо, чтобы вытаскивать из общего списка нужные предметы
+  itemsList: Item[] = this.itemsService.itemsList; //надо, чтобы вытаскивать из общего списка нужные предметы
   kazumaStats = this.kazumaService.kazumaStats //статы Кацумы, чтоб компонент знал
 
   showtest = false;  //начало показа анимации
@@ -178,11 +178,11 @@ export class OverlayComponent {
       //нужно, чтобы данные передавались обратно в родительский компонент по щелчку на backdrop
       this.dialogRef.beforeClosed().subscribe(() => this.dialogRef.close(this.girl));
 
-      //нужно, чтобы компонент знал, какие вообще предметы бывают
-      this.itemsService.goGetItems().then((itemsList: Item[]) => {
-        this.itemsList = itemsList;
-        console.log(itemsList)
-      });
+      // //нужно, чтобы компонент знал, какие вообще предметы бывают
+      // this.itemsService.goGetItems().then((itemsList: Item[]) => {
+      //   this.itemsList = itemsList;
+      //   console.log(itemsList)
+      // });
 
   }
 

@@ -31,23 +31,19 @@ import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 })
 export class GalleryComponent implements OnInit, DoCheck{
 
-  // loading = true;
-
-  greeting = true; //unnesessary
   theend = false;
 
-  //импортируем (связываемся) со статами Кацумы в сервисе
+  //берем статы Кацумы из сервиса
   //будем следить, не сдох он или как
   kazumaService: KazumaService = inject(KazumaService);
   kazumaStats: Kazuma = this.kazumaService.kazumaStats;
 
-  //импортируем полные списки девчонок и локаций, чтобы все их отобразить
+  //берем все списки девчонок и локаций, чтобы их отобразить
   girlService: GirlsService = inject(GirlsService);
   girlsList = this.girlService.girlsList;
 
   locationsService: LocationsService = inject(LocationsService);
-  // locationsList= this.locationsService.locationsList;
-  locationsList!: Location[];
+  locationsList: Location[] = this.locationsService.locationsList;
 
 
   constructor(private dialog: MatDialog){}
@@ -61,7 +57,7 @@ export class GalleryComponent implements OnInit, DoCheck{
     GreetingConfig.height = '560px'; //650
     GreetingConfig.autoFocus = false;
 
-    if (this.greeting){ this.dialog.open(ContractComponent, GreetingConfig); }   
+    this.dialog.open(ContractComponent, GreetingConfig);
     
     //диалог для загрузки
     const LoadingConfig = new MatDialogConfig();
@@ -90,13 +86,6 @@ export class GalleryComponent implements OnInit, DoCheck{
         }, 5000)
       })
     }
-
-    //достаем список локаций и привязываем к местным переменным
-    this.locationsService.goGetLocations().then((locationsList: Location[]) => {
-      this.locationsList = locationsList;
-      console.log(locationsList)
-    });
-
  
   }
 
@@ -115,7 +104,5 @@ export class GalleryComponent implements OnInit, DoCheck{
       this.dialog.open(EndgameComponent, TheEndConfig);      
     }    
   }
-
-
   
 }

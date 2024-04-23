@@ -15,8 +15,6 @@ export class ContractComponent {
     this.dialogRef.close();
   }
 
-  constructor( private dialogRef: MatDialogRef<ContractComponent>) {
-
-  }
+  constructor(private dialogRef: MatDialogRef<ContractComponent>) {}
 
 }
